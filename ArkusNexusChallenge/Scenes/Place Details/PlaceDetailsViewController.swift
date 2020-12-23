@@ -90,6 +90,14 @@ extension PlaceDetailsViewController {
         return details
     }
     
+    private func openAppleMaps(location: CLLocationCoordinate2D , address: String) {
+        let coordinate = CLLocationCoordinate2DMake(location.latitude, location.longitude)
+        let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary: nil))
+        mapItem.name = address
+
+        mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving])
+    }
+    
     func calculateRating(rating: Double) {
         let roundedScore = Int(rating.rounded())
         
@@ -151,6 +159,15 @@ extension PlaceDetailsViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if placeDetails[indexPath.row].detail == .directions{
+            guard let lat = viewModel?.Latitude,
+                  let lon = viewModel?.Longitude,
+                  let addr = viewModel?.Address else { return }
+            let location = CLLocationCoordinate2D(latitude: lat,
+                                                  longitude: lon)
+            openAppleMaps(location: location, address: addr)
+        }
         
         if placeDetails[indexPath.row].detail == .call {
             let numberString = placeDetails[indexPath.row].detailValue
