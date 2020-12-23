@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF5692682592B531004A40E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5692672592B531004A40E0 /* AppDelegate.swift */; };
+		EF56926A2592B531004A40E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5692692592B531004A40E0 /* SceneDelegate.swift */; };
+		EF5692712592B532004A40E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5692702592B532004A40E0 /* Assets.xcassets */; };
+		EF5692742592B532004A40E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5692722592B532004A40E0 /* LaunchScreen.storyboard */; };
+		EF56927F2592B532004A40E0 /* ArkusNexusChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF56927E2592B532004A40E0 /* ArkusNexusChallengeTests.swift */; };
+		EF56928A2592B532004A40E0 /* ArkusNexusChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5692892592B532004A40E0 /* ArkusNexusChallengeUITests.swift */; };
+		EF5692AE2592B767004A40E0 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5692AC2592B766004A40E0 /* PlacesViewController.swift */; };
+		EF5692AF2592B767004A40E0 /* PlacesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5692AD2592B766004A40E0 /* PlacesViewController.xib */; };
+		EF5692B52592B77A004A40E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5692B42592B77A004A40E0 /* Constants.swift */; };
+		EF5692C12592BCE3004A40E0 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5692BF2592BCE3004A40E0 /* PlacesTableViewCell.swift */; };
+		EF5692C22592BCE3004A40E0 /* PlacesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5692C02592BCE3004A40E0 /* PlacesTableViewCell.xib */; };
+		EF5692C72592BD32004A40E0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5692C62592BD32004A40E0 /* Place.swift */; };
+		EF5692CC2592BF2B004A40E0 /* PlacesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5692CB2592BF2B004A40E0 /* PlacesService.swift */; };
+		EF5692D12592C014004A40E0 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5692D02592C014004A40E0 /* APIError.swift */; };
+		EF59379D2593A80900BBBF76 /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF59379B2593A80900BBBF76 /* PlaceDetailsViewController.swift */; };
+		EF59379E2593A80900BBBF76 /* PlaceDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF59379C2593A80900BBBF76 /* PlaceDetailsViewController.xib */; };
+		EF5937A42593C90900BBBF76 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5937A32593C90900BBBF76 /* CustomAnnotation.swift */; };
+		EF5937AC2593D51400BBBF76 /* PlaceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5937AB2593D51400BBBF76 /* PlaceDetails.swift */; };
+		EF5937B32593D5F200BBBF76 /* PlaceDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5937B12593D5F200BBBF76 /* PlaceDetailsTableViewCell.swift */; };
+		EF5937B42593D5F200BBBF76 /* PlaceDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5937B22593D5F200BBBF76 /* PlaceDetailsTableViewCell.xib */; };
+		EFE719352592C7CB0024745B /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE719342592C7CB0024745B /* PlaceViewModel.swift */; };
+		EFE7193B2592F4420024745B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE7193A2592F4420024745B /* MapKit.framework */; };
+		EFE7194525931DB90024745B /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7194425931DB90024745B /* CLLocation+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF56927B2592B532004A40E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF56925C2592B531004A40E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF5692632592B531004A40E0;
+			remoteInfo = ArkusNexusChallenge;
+		};
+		EF5692862592B532004A40E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF56925C2592B531004A40E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF5692632592B531004A40E0;
+			remoteInfo = ArkusNexusChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF5692642592B531004A40E0 /* ArkusNexusChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArkusNexusChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5692672592B531004A40E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF5692692592B531004A40E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF5692702592B532004A40E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF5692732592B532004A40E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF5692752592B532004A40E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF56927A2592B532004A40E0 /* ArkusNexusChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArkusNexusChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF56927E2592B532004A40E0 /* ArkusNexusChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkusNexusChallengeTests.swift; sourceTree = "<group>"; };
+		EF5692802592B532004A40E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5692852592B532004A40E0 /* ArkusNexusChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArkusNexusChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5692892592B532004A40E0 /* ArkusNexusChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkusNexusChallengeUITests.swift; sourceTree = "<group>"; };
+		EF56928B2592B532004A40E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5692AC2592B766004A40E0 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		EF5692AD2592B766004A40E0 /* PlacesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesViewController.xib; sourceTree = "<group>"; };
+		EF5692B42592B77A004A40E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF5692BF2592BCE3004A40E0 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		EF5692C02592BCE3004A40E0 /* PlacesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesTableViewCell.xib; sourceTree = "<group>"; };
+		EF5692C62592BD32004A40E0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		EF5692CB2592BF2B004A40E0 /* PlacesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesService.swift; sourceTree = "<group>"; };
+		EF5692D02592C014004A40E0 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		EF59379B2593A80900BBBF76 /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		EF59379C2593A80900BBBF76 /* PlaceDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailsViewController.xib; sourceTree = "<group>"; };
+		EF5937A32593C90900BBBF76 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		EF5937AB2593D51400BBBF76 /* PlaceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetails.swift; sourceTree = "<group>"; };
+		EF5937B12593D5F200BBBF76 /* PlaceDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		EF5937B22593D5F200BBBF76 /* PlaceDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		EFE719342592C7CB0024745B /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		EFE7193A2592F4420024745B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EFE7194425931DB90024745B /* CLLocation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF5692612592B531004A40E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE7193B2592F4420024745B /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF5692772592B532004A40E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF5692822592B532004A40E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF56925B2592B531004A40E0 = {
+			isa = PBXGroup;
+			children = (
+				EF5692662592B531004A40E0 /* ArkusNexusChallenge */,
+				EF56927D2592B532004A40E0 /* ArkusNexusChallengeTests */,
+				EF5692882592B532004A40E0 /* ArkusNexusChallengeUITests */,
+				EF5692652592B531004A40E0 /* Products */,
+				EFE719392592F4420024745B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF5692652592B531004A40E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF5692642592B531004A40E0 /* ArkusNexusChallenge.app */,
+				EF56927A2592B532004A40E0 /* ArkusNexusChallengeTests.xctest */,
+				EF5692852592B532004A40E0 /* ArkusNexusChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF5692662592B531004A40E0 /* ArkusNexusChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				EF5692B32592B76A004A40E0 /* Utilities */,
+				EF5692A32592B5B0004A40E0 /* Services */,
+				EF5692A22592B5AA004A40E0 /* Models */,
+				EF5692A12592B5A3004A40E0 /* View Models */,
+				EF5692A02592B59B004A40E0 /* Scenes */,
+				EF5692672592B531004A40E0 /* AppDelegate.swift */,
+				EF5692692592B531004A40E0 /* SceneDelegate.swift */,
+				EF5692702592B532004A40E0 /* Assets.xcassets */,
+				EF5692722592B532004A40E0 /* LaunchScreen.storyboard */,
+				EF5692752592B532004A40E0 /* Info.plist */,
+			);
+			path = ArkusNexusChallenge;
+			sourceTree = "<group>";
+		};
+		EF56927D2592B532004A40E0 /* ArkusNexusChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF56927E2592B532004A40E0 /* ArkusNexusChallengeTests.swift */,
+				EF5692802592B532004A40E0 /* Info.plist */,
+			);
+			path = ArkusNexusChallengeTests;
+			sourceTree = "<group>";
+		};
+		EF5692882592B532004A40E0 /* ArkusNexusChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF5692892592B532004A40E0 /* ArkusNexusChallengeUITests.swift */,
+				EF56928B2592B532004A40E0 /* Info.plist */,
+			);
+			path = ArkusNexusChallengeUITests;
+			sourceTree = "<group>";
+		};
+		EF5692A02592B59B004A40E0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EF5692BD2592BCA8004A40E0 /* Place Details */,
+				EF5692BC2592BC7E004A40E0 /* Places */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EF5692A12592B5A3004A40E0 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFE719342592C7CB0024745B /* PlaceViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		EF5692A22592B5AA004A40E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF5692C62592BD32004A40E0 /* Place.swift */,
+				EF5937AB2593D51400BBBF76 /* PlaceDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF5692A32592B5B0004A40E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EF5692CB2592BF2B004A40E0 /* PlacesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EF5692B32592B76A004A40E0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EF5692B42592B77A004A40E0 /* Constants.swift */,
+				EF5692D02592C014004A40E0 /* APIError.swift */,
+				EFE7194425931DB90024745B /* CLLocation+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EF5692BC2592BC7E004A40E0 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				EF5692BE2592BCBD004A40E0 /* Places Cell */,
+				EF5692AC2592B766004A40E0 /* PlacesViewController.swift */,
+				EF5692AD2592B766004A40E0 /* PlacesViewController.xib */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		EF5692BD2592BCA8004A40E0 /* Place Details */ = {
+			isa = PBXGroup;
+			children = (
+				EF5937B02593D5C600BBBF76 /* PlaceDetailsCell */,
+				EF5937A22593C8E900BBBF76 /* Custom Annotation */,
+				EF59379B2593A80900BBBF76 /* PlaceDetailsViewController.swift */,
+				EF59379C2593A80900BBBF76 /* PlaceDetailsViewController.xib */,
+			);
+			path = "Place Details";
+			sourceTree = "<group>";
+		};
+		EF5692BE2592BCBD004A40E0 /* Places Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF5692BF2592BCE3004A40E0 /* PlacesTableViewCell.swift */,
+				EF5692C02592BCE3004A40E0 /* PlacesTableViewCell.xib */,
+			);
+			path = "Places Cell";
+			sourceTree = "<group>";
+		};
+		EF5937A22593C8E900BBBF76 /* Custom Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				EF5937A32593C90900BBBF76 /* CustomAnnotation.swift */,
+			);
+			path = "Custom Annotation";
+			sourceTree = "<group>";
+		};
+		EF5937B02593D5C600BBBF76 /* PlaceDetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF5937B12593D5F200BBBF76 /* PlaceDetailsTableViewCell.swift */,
+				EF5937B22593D5F200BBBF76 /* PlaceDetailsTableViewCell.xib */,
+			);
+			path = PlaceDetailsCell;
+			sourceTree = "<group>";
+		};
+		EFE719392592F4420024745B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFE7193A2592F4420024745B /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF5692632592B531004A40E0 /* ArkusNexusChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF56928E2592B532004A40E0 /* Build configuration list for PBXNativeTarget "ArkusNexusChallenge" */;
+			buildPhases = (
+				EF5692602592B531004A40E0 /* Sources */,
+				EF5692612592B531004A40E0 /* Frameworks */,
+				EF5692622592B531004A40E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArkusNexusChallenge;
+			productName = ArkusNexusChallenge;
+			productReference = EF5692642592B531004A40E0 /* ArkusNexusChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF5692792592B532004A40E0 /* ArkusNexusChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF5692912592B532004A40E0 /* Build configuration list for PBXNativeTarget "ArkusNexusChallengeTests" */;
+			buildPhases = (
+				EF5692762592B532004A40E0 /* Sources */,
+				EF5692772592B532004A40E0 /* Frameworks */,
+				EF5692782592B532004A40E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF56927C2592B532004A40E0 /* PBXTargetDependency */,
+			);
+			name = ArkusNexusChallengeTests;
+			productName = ArkusNexusChallengeTests;
+			productReference = EF56927A2592B532004A40E0 /* ArkusNexusChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF5692842592B532004A40E0 /* ArkusNexusChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF5692942592B532004A40E0 /* Build configuration list for PBXNativeTarget "ArkusNexusChallengeUITests" */;
+			buildPhases = (
+				EF5692812592B532004A40E0 /* Sources */,
+				EF5692822592B532004A40E0 /* Frameworks */,
+				EF5692832592B532004A40E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF5692872592B532004A40E0 /* PBXTargetDependency */,
+			);
+			name = ArkusNexusChallengeUITests;
+			productName = ArkusNexusChallengeUITests;
+			productReference = EF5692852592B532004A40E0 /* ArkusNexusChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF56925C2592B531004A40E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					EF5692632592B531004A40E0 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					EF5692792592B532004A40E0 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = EF5692632592B531004A40E0;
+					};
+					EF5692842592B532004A40E0 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = EF5692632592B531004A40E0;
+					};
+				};
+			};
+			buildConfigurationList = EF56925F2592B531004A40E0 /* Build configuration list for PBXProject "ArkusNexusChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF56925B2592B531004A40E0;
+			productRefGroup = EF5692652592B531004A40E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF5692632592B531004A40E0 /* ArkusNexusChallenge */,
+				EF5692792592B532004A40E0 /* ArkusNexusChallengeTests */,
+				EF5692842592B532004A40E0 /* ArkusNexusChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF5692622592B531004A40E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5937B42593D5F200BBBF76 /* PlaceDetailsTableViewCell.xib in Resources */,
+				EF5692AF2592B767004A40E0 /* PlacesViewController.xib in Resources */,
+				EF59379E2593A80900BBBF76 /* PlaceDetailsViewController.xib in Resources */,
+				EF5692742592B532004A40E0 /* LaunchScreen.storyboard in Resources */,
+				EF5692712592B532004A40E0 /* Assets.xcassets in Resources */,
+				EF5692C22592BCE3004A40E0 /* PlacesTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF5692782592B532004A40E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF5692832592B532004A40E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF5692602592B531004A40E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5692CC2592BF2B004A40E0 /* PlacesService.swift in Sources */,
+				EFE719352592C7CB0024745B /* PlaceViewModel.swift in Sources */,
+				EF5692C12592BCE3004A40E0 /* PlacesTableViewCell.swift in Sources */,
+				EF59379D2593A80900BBBF76 /* PlaceDetailsViewController.swift in Sources */,
+				EF5937AC2593D51400BBBF76 /* PlaceDetails.swift in Sources */,
+				EF5692AE2592B767004A40E0 /* PlacesViewController.swift in Sources */,
+				EFE7194525931DB90024745B /* CLLocation+Extension.swift in Sources */,
+				EF5692682592B531004A40E0 /* AppDelegate.swift in Sources */,
+				EF5692C72592BD32004A40E0 /* Place.swift in Sources */,
+				EF5692D12592C014004A40E0 /* APIError.swift in Sources */,
+				EF5937B32593D5F200BBBF76 /* PlaceDetailsTableViewCell.swift in Sources */,
+				EF56926A2592B531004A40E0 /* SceneDelegate.swift in Sources */,
+				EF5692B52592B77A004A40E0 /* Constants.swift in Sources */,
+				EF5937A42593C90900BBBF76 /* CustomAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF5692762592B532004A40E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF56927F2592B532004A40E0 /* ArkusNexusChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF5692812592B532004A40E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF56928A2592B532004A40E0 /* ArkusNexusChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF56927C2592B532004A40E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF5692632592B531004A40E0 /* ArkusNexusChallenge */;
+			targetProxy = EF56927B2592B532004A40E0 /* PBXContainerItemProxy */;
+		};
+		EF5692872592B532004A40E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF5692632592B531004A40E0 /* ArkusNexusChallenge */;
+			targetProxy = EF5692862592B532004A40E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF5692722592B532004A40E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5692732592B532004A40E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF56928C2592B532004A40E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF56928D2592B532004A40E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF56928F2592B532004A40E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JLVCX6QT78;
+				INFOPLIST_FILE = ArkusNexusChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maquino.ArkusNexusChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EF5692902592B532004A40E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JLVCX6QT78;
+				INFOPLIST_FILE = ArkusNexusChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maquino.ArkusNexusChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EF5692922592B532004A40E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JLVCX6QT78;
+				INFOPLIST_FILE = ArkusNexusChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maquino.ArkusNexusChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArkusNexusChallenge.app/ArkusNexusChallenge";
+			};
+			name = Debug;
+		};
+		EF5692932592B532004A40E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JLVCX6QT78;
+				INFOPLIST_FILE = ArkusNexusChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maquino.ArkusNexusChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArkusNexusChallenge.app/ArkusNexusChallenge";
+			};
+			name = Release;
+		};
+		EF5692952592B532004A40E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JLVCX6QT78;
+				INFOPLIST_FILE = ArkusNexusChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maquino.ArkusNexusChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArkusNexusChallenge;
+			};
+			name = Debug;
+		};
+		EF5692962592B532004A40E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JLVCX6QT78;
+				INFOPLIST_FILE = ArkusNexusChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maquino.ArkusNexusChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArkusNexusChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF56925F2592B531004A40E0 /* Build configuration list for PBXProject "ArkusNexusChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF56928C2592B532004A40E0 /* Debug */,
+				EF56928D2592B532004A40E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF56928E2592B532004A40E0 /* Build configuration list for PBXNativeTarget "ArkusNexusChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF56928F2592B532004A40E0 /* Debug */,
+				EF5692902592B532004A40E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF5692912592B532004A40E0 /* Build configuration list for PBXNativeTarget "ArkusNexusChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5692922592B532004A40E0 /* Debug */,
+				EF5692932592B532004A40E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF5692942592B532004A40E0 /* Build configuration list for PBXNativeTarget "ArkusNexusChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5692952592B532004A40E0 /* Debug */,
+				EF5692962592B532004A40E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF56925C2592B531004A40E0 /* Project object */;
+}

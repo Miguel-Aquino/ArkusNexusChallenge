@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlacesViewController" customModule="ArkusNexusChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="zXI-HK-M7f" id="uNg-ua-GVD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I74-hz-7Aa">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="figoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="RiN-MO-4OS">
+                            <rect key="frame" x="157" y="5" width="100" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="JmX-fP-Xcn"/>
+                                <constraint firstAttribute="height" constant="50" id="lNi-Na-6tc"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="RiN-MO-4OS" firstAttribute="centerX" secondItem="I74-hz-7Aa" secondAttribute="centerX" id="2IO-14-qw6"/>
+                        <constraint firstAttribute="height" constant="60" id="xKJ-Xg-ERr"/>
+                        <constraint firstItem="RiN-MO-4OS" firstAttribute="centerY" secondItem="I74-hz-7Aa" secondAttribute="centerY" id="xyK-yH-18G"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zXI-HK-M7f">
+                    <rect key="frame" x="0.0" y="104" width="414" height="792"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="I74-hz-7Aa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5o4-aZ-1c5"/>
+                <constraint firstItem="zXI-HK-M7f" firstAttribute="top" secondItem="I74-hz-7Aa" secondAttribute="bottom" id="7i6-5L-RnL"/>
+                <constraint firstItem="zXI-HK-M7f" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="GPI-8g-BsQ"/>
+                <constraint firstItem="I74-hz-7Aa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XXa-Ah-gF7"/>
+                <constraint firstItem="I74-hz-7Aa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hNo-Eu-tvD"/>
+                <constraint firstItem="zXI-HK-M7f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kUo-GE-jwm"/>
+                <constraint firstAttribute="bottom" secondItem="zXI-HK-M7f" secondAttribute="bottom" id="vQB-X8-uVw"/>
+            </constraints>
+            <point key="canvasLocation" x="2.8985507246376816" y="124.55357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="figoLogo" width="90" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
