@@ -25,7 +25,6 @@ class PlacesViewController: UIViewController {
         
         configureVC()
         configureLocationServices()
-        loadData()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -56,6 +55,7 @@ extension PlacesViewController {
                 self.viewModel.sort(by: { $0.distance < $1.distance })
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
+                    self.locationManager?.stopUpdatingLocation()
                 }
             case .failure: break
             }
@@ -97,12 +97,23 @@ extension PlacesViewController: CLLocationManagerDelegate {
         locationManager?.delegate = self
         locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager?.requestWhenInUseAuthorization()
-        locationManager?.startUpdatingLocation()
+    }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        switch manager.authorizationStatus {
+        case .authorizedAlways , .authorizedWhenInUse:
+            locationManager?.startUpdatingLocation()
+            loadData()
+            break
+        case .notDetermined , .denied , .restricted:
+            break
+        default:
+            break
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location: CLLocationCoordinate2D = manager.location!.coordinate
-        print("locations = \(location.latitude) \(location.longitude)")
         currentLocation = location
     }
 }

@@ -105,23 +105,14 @@ extension PlaceDetailsViewController {
             for index in 1...5 {
                 if index <= roundedScore {
                     let yellowStar = UIImageView(image: UIImage(named: "starYellow"))
-                    setConstraints(imageView: yellowStar)
                     ratingStack.addArrangedSubview(yellowStar)
                 } else {
                     let grayStar = UIImageView(image: UIImage(named: "starGray"))
-                    setConstraints(imageView: grayStar)
                     ratingStack.addArrangedSubview(grayStar)
                 }
             }
             didFinishCalculate = true
         }
-    }
-    
-    func setConstraints(imageView: UIView){
-        NSLayoutConstraint.activate([
-            imageView.heightAnchor.constraint(equalToConstant: (20)),
-            imageView.widthAnchor.constraint(equalToConstant: (20))
-        ])
     }
 }
 
