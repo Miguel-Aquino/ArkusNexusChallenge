@@ -70,25 +70,7 @@ class PlacesService {
             
             completion(image)
         }
-
         task.resume()
         
-        
-
-//        if let cachedImage = cache.object(forKey: urlString as NSString) {
-//            completion(cachedImage)
-//        } else {
-//            URLSession.shared.dataTask(with: url) { data, response, error in
-//                if error != nil {
-//                    completion(nil)
-//
-//                } else if let data = data, let image = UIImage(data: data) {
-//                    self.cache.setObject(image, forKey: url.absoluteString as NSString)
-//                    completion(image)
-//                } else {
-//                    completion(nil)
-//                }
-//            }
-//        }
     }
 }

@@ -25,9 +25,3 @@ enum Images {
     static let call = UIImage(named: "cellIconsPhoneCopy1")
     static let visitWebSite = UIImage(named: "cellIconsWebsite")
 }
-
-enum PlaceInfo {
-    static let directions = "Directions"
-    static let call = "Call"
-    static let visitWebsite = "Visit Website"
-}
